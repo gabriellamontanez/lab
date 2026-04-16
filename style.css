@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f8fb;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    background-color: #0b3d91;
+    color: white;
+    padding: 20px;
+}
+
+#status-banner {
+    background-color: #dff6dd;
+    color: #1b5e20;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #1b5e20;
+    border-radius: 10px;
+
+    animation-name: pulseBanner;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulseBanner {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.03);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#hero-banner {
+    background-color: #e3f2fd;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#services {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.service-box {
+    background-color: white;
+    border: 2px solid #0b3d91;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-box:hover {
+    background-color: #dbeafe;
+    transform: scale(1.05) translateY(-10px) rotate(1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
